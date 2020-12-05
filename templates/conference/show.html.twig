@@ -5,6 +5,14 @@
 {% block body %}
     <h2>{{ conference }} Conference</h2>
 
+    <hr>
+
+    <h3>Comment (Be nice!)</h3>
+
+    {{ form(comment_form) }}
+
+    <hr>
+
     {% if comments|length > 0 %}
         <div>There are {{ comments|length }} comments.</div>
 
